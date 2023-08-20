@@ -38,7 +38,7 @@
                     <h3 class="text-3xl font-bold">Kitchenware</h3>
                     <div class="flex gap-5">
                         <!-- card -->
-                        <div id="card-one" class="card w-72 bg-base-100 shadow-xl ">
+                        <div class="card-one card w-72 bg-base-100 shadow-xl ">
                             <figure class="bg-gray-100 rounded-lg m-5 h-44 w-64 mx-auto">
                                 <img src="./images/prod1.png" alt="Shoes" />
                             </figure>
@@ -51,11 +51,11 @@
                             </div>
                             <div class="card-body items-center text-center pt-3">
                                 <h2 id="item-one" class="card-title">K. Accessories</h2>
-                                <p>39.00 TK</p>
+                                <p id="price-one">39.00 TK</p>
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card w-72 bg-base-100 shadow-xl ">
+                        <div class="card-one card w-72 bg-base-100 shadow-xl ">
                             <figure class="bg-gray-100 rounded-lg m-5 h-44 w-64 mx-auto">
                                 <img src="./images/prod2.png" alt="Shoes" />
                             </figure>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card w-72 bg-base-100 shadow-xl ">
+                        <div class="card-one card w-72 bg-base-100 shadow-xl ">
                             <figure class="bg-gray-100 rounded-lg m-5 h-44 w-64 mx-auto">
                                 <img src="./images/prod3.png" alt="Shoes" />
                             </figure>
@@ -95,7 +95,7 @@
                     <h3 class="text-3xl font-bold">Sportswear</h3>
                     <div class="flex gap-5">
                         <!-- card -->
-                        <div class="card w-72 bg-base-100 shadow-xl ">
+                        <div class="card-one card w-72 bg-base-100 shadow-xl ">
                             <figure class="bg-gray-100 rounded-lg m-5 h-44 w-64 mx-auto">
                                 <img src="./images/prod4.png" alt="Shoes" />
                             </figure>
@@ -112,7 +112,7 @@
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card w-72 bg-base-100 shadow-xl ">
+                        <div class="card-one card w-72 bg-base-100 shadow-xl ">
                             <figure class="bg-gray-100 rounded-lg m-5 h-44 w-64 mx-auto">
                                 <img src="./images/prod5.png" alt="Shoes" />
                             </figure>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card w-72 bg-base-100 shadow-xl ">
+                        <div class="card-one card w-72 bg-base-100 shadow-xl ">
                             <figure class="bg-gray-100 rounded-lg m-5 h-44 w-64 mx-auto">
                                 <img src="./images/prod6.png" alt="Shoes" />
                             </figure>
@@ -165,14 +165,13 @@
                     </div>
                     <div class="card w-92 bg-base-100 shadow-xl">
                         <div id="cart-history" class="card-body">
-                            <p class="text-md font-semibold"><span id="auto-no">1. </span><span id="item-name">Home
-                                    Cooker</span></p>
+                            <div id="item-list"></div>
                             <hr>
                             <p class="text-md font-semibold">Total Price: <span id="total-price"
                                     class="text-gray-400">0</span><span class="text-gray-400"> TK</span></p>
-                            <p class="text-md font-semibold">Discount: <span id="total-price"
+                            <p class="text-md font-semibold">Discount: <span id="discount-price"
                                     class="text-gray-400">0</span><span class="text-gray-400"> TK</span></p>
-                            <p class="text-md font-semibold">Total: <span id="total-price"
+                            <p class="text-md font-semibold">Total: <span id="final-total-price"
                                     class="text-gray-400">0</span><span class="text-gray-400"> TK</span></p>
                             <hr>
                             <button class="bg-[#E527B2] text-white px-4 py-2 rounded-lg relative top-12">Make
