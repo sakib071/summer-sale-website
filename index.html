@@ -166,10 +166,11 @@
                             <h2 class="card-title">Have coupon?</h2>
 
                             <div class="card-actions justify-end items-center gap-0">
-                                <input id="coupon-field" class="py-2 rounded-l-lg p-3 border-gray-600" type="text"
+                                <input id="coupon-field" class="py-2 rounded-l-lg p-3 border-0 shadow-md" type="text"
                                     placeholder="Coupon code">
-                                <button id="btn-apply" class="bg-[#E527B2] text-white px-4 py-2 rounded-r-lg"
-                                    disabled>Apply</button>
+                                <button id="btn-apply"
+                                    class="bg-[#E527B2] hover:bg-white hover:text-[#E527B2] text-white px-4 py-2 rounded-r-lg shadow-md disabled:bg-gray-300 disabled:text-white" disabled>
+                                    Apply</button>
                             </div>
                         </div>
                     </div>
@@ -185,9 +186,9 @@
                                     class="text-gray-400">0</span><span class="text-gray-400"> TK</span></p>
                             <hr>
 
-                            <!-- Open the modal using ID.showModal() method -->
-                            <button id="btn-purchase" class="btn bg-[#E527B2] text-white shadow-lg"
-                                onclick="my_modal_1.showModal()">Make
+                            <button id="btn-purchase"
+                                class="btn bg-[#E527B2] hover:bg-white hover:text-[#E527B2] text-white shadow-lg"
+                                onclick="my_modal_1.showModal()" disabled>Make
                                 Purchase</button>
                             <dialog id="my_modal_1" class="modal">
                                 <form method="dialog" class="modal-box">
@@ -199,7 +200,7 @@
                                     <div class="modal-action">
                                         <!-- if there is a button in form, it will close the modal -->
                                         <button id="btn-home"
-                                            class="btn mx-auto bg-[#E527B2] text-white hover:bg-white hover:text-[#E527B2] shadow-lg">Go
+                                            class="btn mx-auto bg-[#E527B2] text-white hover:bg-[#C51F9B] shadow-lg">Go
                                             Home</button>
                                     </div>
                                 </form>

@@ -22,8 +22,10 @@ function addToCartHistory(itemName, itemPrice) {
     updateTotalPrice();
 
     const btnApply = document.getElementById('btn-apply');
+    const purchaseBtn = document.getElementById('btn-purchase');
     if (totalPrice >= 200) {
         btnApply.disabled = false;
+        purchaseBtn.disabled = false;
     }
 }
 
@@ -56,14 +58,10 @@ const couponBtn = document.getElementById('btn-apply').addEventListener('click',
     }
 });
 
-const purchaseBtn = document.getElementById('btn-purchase').addEventListener('click', function () {
-
-});
-
 const homeBtn = document.getElementById('btn-home').addEventListener('click', function () {
     window.location.href = 'index.html';
     finalTotal.innerText = '';
     addDiscount.innerText = '';
     totalPrice.innerText = '';
-    
+
 });
