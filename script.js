@@ -44,10 +44,13 @@ const couponBtn = document.getElementById('btn-apply').addEventListener('click',
     const couponFieldValue = couponField.value;
 
     // console.log(couponFieldValue);
-    if (couponFieldValue == "SELL200") {
+    if(couponFieldValue == ''){
+        alert('Empty coupon field');
+    }
+    else if (couponFieldValue == "SELL200") {
         // console.log('OK');
         addDiscount = totalPrice * 0.2;
-        setValueById('discount-price', addDiscount);
+        setValueById('discount-price', addDiscount.toFixed(2));
         const finalTotal = totalPrice - addDiscount;
         setValueById('final-total-price', finalTotal);
         couponField.value = '';
