@@ -63,5 +63,4 @@ const homeBtn = document.getElementById('btn-home').addEventListener('click', fu
     finalTotal.innerText = '';
     addDiscount.innerText = '';
     totalPrice.innerText = '';
-
 });
