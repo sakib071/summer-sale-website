@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Summer Sale</title>
+    <style>
+        .font-work {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <header>
     </header>
-    <main>
+    <main class="font-work">
         <section class="flex bg-[#F9F6E2] text-center justify-center items-center">
             <div>
                 <h3 class="text-3xl font-semibold mb-5">---SALE FEVER---</h3>
@@ -157,9 +166,10 @@
                             <h2 class="card-title">Have coupon?</h2>
 
                             <div class="card-actions justify-end items-center gap-0">
-                                <input class="py-2 rounded-l-lg p-3 border-gray-600" type="text"
+                                <input id="coupon-field" class="py-2 rounded-l-lg p-3 border-gray-600" type="text"
                                     placeholder="Coupon code">
-                                <button class="bg-[#E527B2] text-white px-4 py-2 rounded-r-lg">Apply</button>
+                                <button id="btn-apply" class="bg-[#E527B2] text-white px-4 py-2 rounded-r-lg"
+                                    disabled>Apply</button>
                             </div>
                         </div>
                     </div>
@@ -174,8 +184,28 @@
                             <p class="text-md font-semibold">Total: <span id="final-total-price"
                                     class="text-gray-400">0</span><span class="text-gray-400"> TK</span></p>
                             <hr>
-                            <button class="bg-[#E527B2] text-white px-4 py-2 rounded-lg relative top-12">Make
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button id="btn-purchase" class="btn bg-[#E527B2] text-white shadow-lg"
+                                onclick="my_modal_1.showModal()">Make
                                 Purchase</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <figure>
+                                        <img src="./images/congo.png" alt="">
+                                    </figure>
+                                    <h3 class="font-bold text-4xl text-center">Congratulations</h3>
+                                    <p class="py-4 text-center">Your Purchase the product</p>
+                                    <div class="modal-action">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button id="btn-home"
+                                            class="btn mx-auto bg-[#E527B2] text-white hover:bg-white hover:text-[#E527B2] shadow-lg">Go
+                                            Home</button>
+                                    </div>
+                                </form>
+                            </dialog>
+
+
                         </div>
                     </div>
                 </div>
