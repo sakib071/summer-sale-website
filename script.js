@@ -34,8 +34,12 @@ productCards.forEach(card => {
     const itemName = card.querySelector('.card-title').innerText;
     const itemPrice = parseFloat(card.querySelector('.card-body p').innerText);
 
-    card.addEventListener('click', () => {
+    // card.addEventListener('click', () => {
+    //     addToCartHistory(itemName, itemPrice);
+    // });
+    card.addEventListener('click', function (event) {
         addToCartHistory(itemName, itemPrice);
+        event.stopPropagation();
     });
 });
 
@@ -44,7 +48,7 @@ const couponBtn = document.getElementById('btn-apply').addEventListener('click',
     const couponFieldValue = couponField.value;
 
     // console.log(couponFieldValue);
-    if(couponFieldValue == ''){
+    if (couponFieldValue == '') {
         alert('Empty coupon field');
     }
     else if (couponFieldValue == "SELL200") {
