@@ -37,7 +37,8 @@ productCards.forEach(card => {
     // card.addEventListener('click', () => {
     //     addToCartHistory(itemName, itemPrice);
     // });
-    card.addEventListener('click', function (event) {
+    const productInfo = card.querySelector('.product-info');
+    productInfo.addEventListener('click', function (event) {
         addToCartHistory(itemName, itemPrice);
         event.stopPropagation();
     });
