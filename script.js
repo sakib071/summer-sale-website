@@ -23,9 +23,12 @@ function addToCartHistory(itemName, itemPrice) {
 
     const btnApply = document.getElementById('btn-apply');
     const purchaseBtn = document.getElementById('btn-purchase');
+    const couponField = document.getElementById('coupon-field');
     if (totalPrice >= 200) {
         btnApply.disabled = false;
         purchaseBtn.disabled = false;
+        couponField.disabled = false;
+
     }
 }
 
